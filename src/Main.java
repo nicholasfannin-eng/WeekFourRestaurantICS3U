@@ -28,6 +28,16 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
+		System.out.println("Welcome to Benji's, our new restaurant chain. Come try our various assortments of delicious, hot and steamy food.");
+		System.out.println("To start off, would you want any refreshements? All non-alchoholic beverages are 2 dollars today.");
+		String drink = in.nextLine();
+
+        String message;
+        // Assign the message variable 
+        message = "A "+drink+" is a wonderful choice for 2 dollars.";
+        
+        // Print and run the code
+        System.out.println(message);
 	}
 
 }
