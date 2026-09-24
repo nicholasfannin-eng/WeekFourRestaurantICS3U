@@ -29,7 +29,7 @@ public class Main {
 		Scanner in = new Scanner(System.in);
 
 		System.out.println("Welcome to Benji's, our new restaurant chain. Come try our various assortments of delicious, hot and steamy food.");
-		System.out.println("To start off, would you want any refreshements? All non-alchoholic beverages are 2 dollars today.");
+		System.out.println("To start off, what kind of drink do you want? All non-alchoholic beverages are 2 dollars today.");
 		String drink = in.nextLine();
 
         String message;
@@ -38,6 +38,36 @@ public class Main {
         
         // Print and run the code
         System.out.println(message);
+        System.out.println("How many "+drink+"s do you want?");
+       int drinks = in.nextInt();
+       System.out.println("So you want "+drinks+" "+drink+"s for "+drinks*2);
+       System.out.println("Perfect and what would you like to eat today.");
+       System.out.println("On the menu today, we have smash burgers, spagetti and meatballs, chili dogs, poutine and our special fried chicken.");
+       String item1 = "Smash burger";
+       double price1 = 19.99;
+       String item2 = "Spagetti and meatballs";
+       double price2 = 24.99;
+       String item3 = "Chili Dog";
+       double price3 = 15.99;
+       String item4 = "Poutine";
+       double price4 = 17.99;
+       String item5 = "Fried Chicken";
+       double price5 = 22.99;
+       System.out.println("How many "+item1+"s do you want?");
+       int sb = in.nextInt();
+       System.out.println("Okay, "+sb+" smash burgers.");
+       System.out.println("How many "+item2+"s do you want?");
+       int sm = in.nextInt();
+       System.out.println("And "+sm+" "+item2+"s.");
+       System.out.println("What about our "+item3+"s?");
+       int cd = in.nextInt();
+       System.out.println("You chose "+cd+" "+item3+"s.");
+       System.out.println("How many "+item4+"s would you like aswell?");
+       int p = in.nextInt();
+       System.out.println("So you want "+p+" "+item5+"s.");
+       System.out.println("And our world-famous "+item5+"? Personally, I would recommend this one.");
+       int fc = in.nextInt();
+       System.out.println("Good choice, "+fc+" "+item5+");
 	}
 
 }
