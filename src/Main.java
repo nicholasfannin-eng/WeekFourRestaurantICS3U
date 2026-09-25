@@ -64,10 +64,30 @@ public class Main {
        System.out.println("You chose "+cd+" "+item3+"s.");
        System.out.println("How many "+item4+"s would you like aswell?");
        int p = in.nextInt();
-       System.out.println("So you want "+p+" "+item5+"s.");
+       System.out.println("So you want "+p+" "+item4+"s.");
        System.out.println("And our world-famous "+item5+"? Personally, I would recommend this one.");
        int fc = in.nextInt();
-       System.out.println("Good choice, "+fc+" "+item5+");
+       System.out.println("Good choice, "+fc+" "+item5+"");
+       double totalprice1 = price1*sb + price2*sm + price3*cd + price4*p + price5*fc + drinks*2;
+       System.out.println("Here is the total price before savings: "+totalprice1+"");
+       if (totalprice1>= 30) {
+    	   totalprice1 *=0.90;
+       if(totalprice1>= 50) {
+    	   totalprice1 *=0.80;
+       }
+       }
+       System.out.println("Here is the total price after savings: "+totalprice1+"");
+       
+       double tax = 1.13*totalprice1;
+       System.out.println("What is the "+tax+"");
+       double paidAmount = in.nextDouble();
+       if (paidAmount >= totalprice1) {
+    	   double change = totalprice1 + paidAmount;
+       System.out.println("Thank you, we welcome you back anytime.");
+       } else {
+    	   double change = totalprice1 - paidAmount;
+    	   System.out.println("Sorry, you do not have enough money. Don't make me call the police.");
+       }
 	}
 
 }
